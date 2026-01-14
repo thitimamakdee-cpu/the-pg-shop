@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PG SHOP | Luxury & Elegance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">THE PG SHOP</a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="shop.html">SHOP</a></li> <li><a href="#">COLLECTION</a></li>
+        </ul>
+        
+        <div class="header-actions">
+            <button id="loginBtn" class="btn-login">LOGIN</button>
+            
+            <div id="userProfileContainer" class="profile-dropdown-container" style="display: none;">
+                <div class="profile-trigger">
+                    <img id="userAvatar" src="" alt="User" class="avatar-img">
+                </div>
+                <div class="profile-menu">
+                    <div class="profile-header">
+                        <p id="userName" class="user-name">User</p>
+                    </div>
+                    <hr class="profile-divider">
+                    <ul class="profile-menu-links">
+                        <li><a href="#">My Orders</a></li>
+                        <li><a id="logoutBtn" href="#" class="logout-link">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content animate-enter">
+            <h1>Grand<br>Luxury</h1>
+            <p>สัมผัสประสบการณ์แฟชั่นระดับไฮเอนด์ที่เหนือกว่า</p>
+            <a href="shop.html" class="btn-cta animate-enter delay-1">EXPLORE COLLECTION</a>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <h2 class="section-title">NEW ARRIVALS</h2>
+        <div class="featured-grid">
+            <div class="product-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&q=80" alt="Jacket">
+                </div>
+                <div class="card-info">
+                    <h4>The Royal Jacket</h4>
+                    <p class="price">฿8,900</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&q=80" alt="Shirt">
+                </div>
+                <div class="card-info">
+                    <h4>Gold Stitch Polo</h4>
+                    <p class="price">฿2,490</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&q=80" alt="Tee">
+                </div>
+                <div class="card-info">
+                    <h4>Signature Black Tee</h4>
+                    <p class="price">฿1,290</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="shop.html" class="btn-secondary">VIEW ALL PRODUCTS</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>THE PG SHOP</h3>
+            <p>The New Era of Luxury Fashion.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 THE PG SHOP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>MEMBER ACCESS</h2>
+            <button id="googleLoginBtn" class="btn-google">
+                <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="G"> Sign in with Google
+            </button>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
